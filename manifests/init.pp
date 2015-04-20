@@ -28,7 +28,7 @@ class bash (
   $ensure = installed,
 ) {
 
-  package { $packages: 
+  package { $packages:
     ensure => $ensure,
   }
 }
