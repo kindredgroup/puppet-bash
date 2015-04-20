@@ -1,0 +1,46 @@
+{
+  "name": "unibet-bash",
+  "version": "0.1.0",
+  "author": "Unibet",
+  "summary": "Puppet module to manage bash",
+  "license": "Apache-2.0",
+  "source": "https://github.com/unibet/puppet-bash.git",
+  "project_page": "https://github.com/unibet/puppet-bash",
+  "issues_url": "https://github.com/unibet/puppet-bash/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
