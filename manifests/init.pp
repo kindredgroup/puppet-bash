@@ -26,7 +26,7 @@
 class bash (
   $packages = ['bash', 'bash-completion'],
   $ensure = installed,
-){
+) {
 
   package { $packages: 
     ensure => $ensure,

@@ -9,7 +9,7 @@ define bash::timeout (
   $user      = $name,
   $user_home = "/home/$name",
   $timeout   = 0,
-){
+) {
   file {"$user_home/.bash_profile":
     ensure   => present,
     replace  => 'no',
