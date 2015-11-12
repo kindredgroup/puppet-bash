@@ -19,7 +19,7 @@ group :rspec do
 end
 
 group :kitchen do
-  gem 'puppet_forge', '<= 1.0.2'
+  gem 'puppet_forge'
   gem 'test-kitchen'
   gem 'kitchen-puppet'
   gem 'kitchen-docker'
