@@ -26,7 +26,18 @@
 class bash (
   $packages = ['bash', 'bash-completion'],
   $ensure = installed,
+  $bashrc = undef,
 ) {
+
+  if $bashrc != undef {
+    file { 'etc_bashrc':
+      ensure => file,
+      path   => '/etc/bashrc',
+      source => $bashrc,
+      owner  => 'root',
+      group  => 'root',
+    }
+  }
 
   package { $packages:
     ensure => $ensure,
